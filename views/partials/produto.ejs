@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+
+<div class="container">
+    <div class="card">
+        <h5 class="card-header">Cadastro</h5>
+
+        <div class="card-body">
+            <form action="/salvarCadastro" method="post">
+                <label>Nome</label>
+                <input type="text" name="nome" id="nomeUser" placeholder="Digite seu nome" class="form-control">
+
+                <label class="form-label">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" class="form-control">
+            </form>
+            <button class="btn btn-primary">Enviar</button>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>
